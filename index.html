@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>My Hub | All Projects & Links</title>
-    <meta name="description" content="Pusat link semua proyek dan brand saya.">
+    <title>ɀ𝖊𝖗 | Digital Hub</title>
+    <meta name="description" content="Pusat koordinasi ekosistem digital.">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +21,7 @@
             --bg-card: rgba(15, 23, 42, 0.6);
             --bg-card-hover: rgba(30, 41, 59, 0.8);
             
-            /* Warna Teknologi (Biru & Hijau dari template asli) */
+            /* Warna Teknologi */
             --primary: #0ea5e9; 
             --accent: #10b981; 
             
@@ -53,7 +53,7 @@
         /* --- CONTAINER --- */
         .container {
             width: 100%;
-            max-width: 600px; /* Sedikit lebih lebar untuk menampung teks */
+            max-width: 600px; 
             display: flex;
             flex-direction: column;
             gap: 24px;
@@ -115,7 +115,7 @@
         }
         .category-header i { color: var(--accent); font-size: 14px; }
 
-        /* --- LINK CARDS (MULTIPURPOSE) --- */
+        /* --- LINK CARDS --- */
         .links-wrapper {
             display: flex;
             flex-direction: column;
@@ -142,7 +142,7 @@
         .link-card:hover {
             background: var(--bg-card-hover);
             border-color: var(--primary);
-            transform: translateX(6px); /* Efek geser ke kanan */
+            transform: translateX(6px); 
             box-shadow: 0 4px 12px rgba(0,0,0,0.2);
         }
 
@@ -163,7 +163,7 @@
         .link-action { font-size: 18px; color: var(--text-muted); transition: 0.3s; }
         .link-card:hover .link-action { color: var(--primary); transform: translateX(3px); }
 
-        /* --- TAG STYLE (Untuk Label Kecil di kartu) --- */
+        /* --- TAG STYLE --- */
         .tag {
             font-size: 0.65rem;
             padding: 2px 6px;
@@ -176,16 +176,12 @@
         .tag.new { background: rgba(16, 185, 129, 0.2); color: var(--accent); border-color: rgba(16, 185, 129, 0.2); }
         .tag.hot { background: rgba(239, 68, 68, 0.2); color: #ef4444; border-color: rgba(239, 68, 68, 0.2); }
 
-        /* --- VARIAN KHUSUS (Sesuai kebutuhan Project) --- */
-        
-        /* 1. Card untuk E-Commerce (Warna sedikit berbeda) */
+        /* --- VARIAN KHUSUS --- */
         .card-ecommerce { border-left: 3px solid var(--accent); }
         .card-ecommerce .link-icon { color: var(--accent); }
 
-        /* 2. Card untuk Portfolio/Project */
         .card-project { border-left: 3px solid var(--primary); }
 
-        /* 3. Card untuk Tools/Utility */
         .card-tool { border-left: 3px solid #f59e0b; }
         .card-tool .link-icon { color: #f59e0b; }
 
@@ -211,15 +207,15 @@
         <header class="profile-header">
             <div class="avatar-wrapper">
                 <!-- Ganti Foto Profil -->
-                <img src="https://picsum.photos/seed/userProfile/200/200" alt="Profile" class="avatar">
+                <img src="https://dikapquhusbwjccbqcsb.supabase.co/storage/v1/object/public/images/zer-2.webp" alt="Profile" class="avatar">
                 <div class="status-dot"></div>
             </div>
-            <h1 class="profile-name">ɀ𝖊𝖗 </h1>
+            <h1 class="profile-name">ɀ𝖊𝖗</h1>
             <span class="profile-role">Developer • Creator • Entrepreneur</span>
-            <p class="profile-bio">Portal terpadu untuk akses portofolio bisnis dan proyek teknologi. Kelola jejak digital Anda dengan efisien dan terarah</p>
+            <p class="profile-bio">Portal terpadu untuk akses portofolio bisnis dan proyek teknologi. Kelola jejak digital Anda dengan efisien dan terarah.</p>
         </header>
 
-        <!-- KATEGORI 1: STORE & BRAND (TOKO) -->
+        <!-- KATEGORI 1: STORE & BRAND -->
         <div class="category-header">
             <i class="ph ph-storefront"></i> Official Stores & Brand
         </div>
@@ -249,13 +245,38 @@
             </a>
         </div>
 
-        <!-- KATEGORI 2: ACTIVE PROJECTS (PROYEK AKTIF) -->
+        <!-- KATEGORI 2: ACTIVE PROJECTS (LINK AURORA ADA DISINI) -->
         <div class="category-header">
             <i class="ph ph-rocket-launch"></i> Active Projects
         </div>
         <div class="links-wrapper">
-            <!-- Project 1 -->
-            <a href="#" target="_blank" class="link-card card-project" style="animation-delay: 0.3s;">
+            
+            <!-- PROJECT: AURORA WEB 3 (DIBUAT FEATURED/HOT) -->
+            <a href="https://aurora-xi-ten.vercel.app/" target="_blank" class="link-card card-project" style="animation-delay: 0.25s;">
+                <div class="link-left">
+                    <i class="ph ph-globe-hemisphere-west link-icon"></i>
+                    <div class="link-content">
+                        <span class="link-title">Aurora Web 3.0 <span class="tag hot">Live</span></span>
+                        <span class="link-desc">Platform Komersialisasi Terbaru</span>
+                    </div>
+                </div>
+                <i class="ph ph-arrow-up-right link-action"></i>
+            </a>
+
+            <!-- PROJECT: AURORA WEB 2 -->
+            <a href="https://aurorra-one.vercel.app/" target="_blank" class="link-card card-project" style="animation-delay: 0.3s;">
+                <div class="link-left">
+                    <i class="ph ph-globe link-icon"></i>
+                    <div class="link-content">
+                        <span class="link-title">Aurora Web 2.0</span>
+                        <span class="link-desc">Versi Sebelumnya / Legacy</span>
+                    </div>
+                </div>
+                <i class="ph ph-arrow-up-right link-action"></i>
+            </a>
+
+            <!-- Project 3 -->
+            <a href="#" target="_blank" class="link-card card-project" style="animation-delay: 0.4s;">
                 <div class="link-left">
                     <i class="ph ph-plant link-icon"></i>
                     <div class="link-content">
@@ -266,8 +287,8 @@
                 <i class="ph ph-arrow-up-right link-action"></i>
             </a>
 
-            <!-- Project 2 -->
-            <a href="#" target="_blank" class="link-card card-project" style="animation-delay: 0.4s;">
+            <!-- Project 4 -->
+            <a href="#" target="_blank" class="link-card card-project" style="animation-delay: 0.5s;">
                 <div class="link-left">
                     <i class="ph ph-code link-icon"></i>
                     <div class="link-content">
@@ -278,12 +299,12 @@
                 <i class="ph ph-arrow-up-right link-action"></i>
             </a>
 
-             <!-- Project 3 -->
-             <a href="#" target="_blank" class="link-card card-project" style="animation-delay: 0.5s;">
+             <!-- Project 5 -->
+             <a href="#" target="_blank" class="link-card card-project" style="animation-delay: 0.6s;">
                 <div class="link-left">
                     <i class="ph ph-paint-brush link-icon"></i>
                     <div class="link-content">
-                        <span class="link-title">Design Portfolio <span class="tag hot">Hot</span></span>
+                        <span class="link-title">Design Portfolio</span>
                         <span class="link-desc">Galeri karya desain grafis</span>
                     </div>
                 </div>
@@ -291,13 +312,13 @@
             </a>
         </div>
 
-        <!-- KATEGORI 3: TOOLS & RESOURCES (ALAT BANTU) -->
+        <!-- KATEGORI 3: TOOLS & RESOURCES -->
         <div class="category-header">
             <i class="ph ph-wrench"></i> Tools & Resources
         </div>
         <div class="links-wrapper">
             <!-- Tool 1 -->
-            <a href="#" target="_blank" class="link-card card-tool" style="animation-delay: 0.6s;">
+            <a href="#" target="_blank" class="link-card card-tool" style="animation-delay: 0.7s;">
                 <div class="link-left">
                     <i class="ph ph-calculator link-icon"></i>
                     <div class="link-content">
@@ -309,7 +330,7 @@
             </a>
 
             <!-- Tool 2 -->
-            <a href="#" target="_blank" class="link-card card-tool" style="animation-delay: 0.7s;">
+            <a href="#" target="_blank" class="link-card card-tool" style="animation-delay: 0.8s;">
                 <div class="link-left">
                     <i class="ph ph-file-text link-icon"></i>
                     <div class="link-content">
@@ -321,12 +342,12 @@
             </a>
         </div>
 
-        <!-- KATEGORI 4: SOCIAL & CONTACT (HUBUNGI) -->
+        <!-- KATEGORI 4: SOCIAL & CONTACT -->
         <div class="category-header" style="margin-top: 20px;">
             <i class="ph ph-chat-circle-text"></i> Connect
         </div>
         <div class="links-wrapper">
-            <a href="https://wa.me/628123456789" target="_blank" class="link-card" style="animation-delay: 0.8s;">
+            <a href="https://wa.me/628133039866" target="_blank" class="link-card" style="animation-delay: 0.9s;">
                 <div class="link-left">
                     <i class="ph ph-whatsapp-logo link-icon" style="color: #25D366;"></i>
                     <div class="link-content">
@@ -337,7 +358,7 @@
                 <i class="ph ph-arrow-up-right link-action"></i>
             </a>
             
-            <a href="https://linkedin.com" target="_blank" class="link-card" style="animation-delay: 0.9s;">
+            <a href="https://linkedin.com" target="_blank" class="link-card" style="animation-delay: 1.0s;">
                 <div class="link-left">
                     <i class="ph ph-linkedin-logo link-icon" style="color: #0077b5;"></i>
                     <div class="link-content">
